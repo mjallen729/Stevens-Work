@@ -14,3 +14,6 @@ A 1 30 Platinum (flyer_name, flyer_id, time, status)
 B 2 60 Gold
 C 3 90 Silver
 D 4 120 Super
+
+2 (flyer_id who raised the cancellation request)
+4 (flyer_id who raised the cancellation request)
