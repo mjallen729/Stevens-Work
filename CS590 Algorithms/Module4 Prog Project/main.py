@@ -1,8 +1,6 @@
 # TODO driver to process input data / logic and interact with microservices
-import enums.status_enum as status_enum
 
 inputs = open('./test_cases.txt', 'r')
-
 
 def process_input() -> dict[str, list | int]:
   '''
@@ -37,6 +35,7 @@ def process_input() -> dict[str, list | int]:
     cancels.append(int(inputs.readline().split()[0]))
 
   proc['cancels'] = cancels
+  inputs.readline()  # process empty line after test case
 
   return proc
 
