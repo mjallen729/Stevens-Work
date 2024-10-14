@@ -45,12 +45,13 @@ def process_input() -> dict[str, list | int] | None:
 
   return proc
 
-while True:
+c = 0
+while c := c + 1:
   processed = process_input()
-
   if not processed:
     break
-
+  
+  print(f'\nRESULT OF TEST {c}:')
   database = dbserv.DatabaseService()
 
   # add the passengers to the database
