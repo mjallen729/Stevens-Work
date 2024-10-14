@@ -1,0 +1,16 @@
+5 2 1 (n k c)
+
+A 1 120 Platinum (flyer_name, flyer_id, time, status)
+B 5 60 Super
+C 3 140 Super
+D 2 130 Gold
+E 4 150 Silver
+
+5 (flyer id who raised the cancellation request)
+
+4 1 2 (n k c)
+
+A 1 30 Platinum (flyer_name, flyer_id, time, status)
+B 2 60 Gold
+C 3 90 Silver
+D 4 120 Super
