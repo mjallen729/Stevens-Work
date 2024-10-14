@@ -1,11 +1,11 @@
-# Returns a numbered priority based on status (greater num = higher status)
+# Returns a numbered priority based on status (lower num = higher status)
 # Super > Platinum > Gold > Silver
 def enum(status: str):
   status_map = {
-    'Super': 4,
-    'Platinum': 3,
-    'Gold': 2,
-    'Silver': 1
+    'Super': 1,
+    'Platinum': 2,
+    'Gold': 3,
+    'Silver': 4
   }
 
   return status_map[status] if status in status_map else None
