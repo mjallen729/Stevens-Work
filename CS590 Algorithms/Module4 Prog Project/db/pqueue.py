@@ -19,7 +19,7 @@ class pqueue:
     return heapq.heappop(self.minheap)
   
   def remove(self, item: tuple) -> None:
-    for i in range(self.minheap):
+    for i in range(len(self.minheap)):
       if self.minheap[i] == item:
         self.minheap[i] = self.minheap[-1]
         self.minheap.pop()
