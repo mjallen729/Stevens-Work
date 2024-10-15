@@ -1,5 +1,7 @@
-# TODO a priority queue that stores information about passengers on upgrade list
+# A priority queue that stores information about passengers on upgrade list
 # Each entry in the queue is a tuple of (status_enum, flyer_id)
+
+# NOTE: this is a placeholder file I used to test the rest of the project while building
 import heapq
 
 class pqueue:
