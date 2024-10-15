@@ -1,6 +1,6 @@
 # Abstracted methods to interact directly with the database (microservice)
 # Priority is determined FIRST by status, then by time (lower nums = longer time)
-import db.pqueue as DB
+import db.pqueue_man as DB
 import enums.status_enum as status_enum
 from collections import defaultdict
 
