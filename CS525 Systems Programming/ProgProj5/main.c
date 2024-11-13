@@ -1,6 +1,6 @@
 // This program will continuously scan the log file until it is killed.
 // Try adding new ERROR keywords to the end of the logfile while program
-//  is running, they will be flagged in the output!
+// is running, they will be flagged in the output!
 
 #include <fcntl.h>
 #include <signal.h>
