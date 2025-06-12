@@ -11,10 +11,10 @@ const getAllPeople = async () => {
       if (res.data) {
         ppl = res.data;
       } else {
-        console.error("No data recieved from the API!");
+        throw "No data recieved from the API!";
       }
     } catch (error) {
-      console.error(`Error fetching data: ${error}`);
+      throw `Error fetching data: ${error}`;
     }
   }
 
@@ -26,12 +26,12 @@ export const getPersonById = async (id) => {
   if (!ppl) await getAllPeople();
 
   if (!id || typeof id !== "string") {
-    throw `id parameter must be a string, but received a ${typeof id}`;
+    throw `id argument must be a string, but received a ${typeof id}`;
   }
 
   id = id.trim();
   if (id.length === 0) {
-    throw "id parameter cannot be empty";
+    throw "id argument cannot be empty";
   }
 
   const person = ppl.find((p) => p.id === id);
