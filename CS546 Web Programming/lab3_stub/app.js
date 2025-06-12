@@ -34,7 +34,7 @@ async function main() {
     console.log(
       `PASS: Found ${people.length} people with job title "Librarian".`
     );
-    // console.log(people); // Uncomment to see the result array
+    // console.log(people);
   } catch (e) {
     console.error('FAIL: sameJobTitle("Librarian"):', e);
   }
@@ -109,7 +109,7 @@ async function main() {
   try {
     const company = await listEmployees("Yost, Harris and Cormier");
     console.log('PASS: Found employees for "Yost, Harris and Cormier".');
-    console.log(company); // Uncomment to see the result
+    console.log(company);
   } catch (e) {
     console.error('FAIL: listEmployees("Yost, Harris and Cormier"):', e);
   }
@@ -130,7 +130,7 @@ async function main() {
     console.log(
       `PASS: Found ${companies.length} companies in the "Apparel" industry.`
     );
-    // console.log(companies); // Uncomment to see the result
+    // console.log(companies);
   } catch (e) {
     console.error('FAIL: sameIndustry("Apparel"):', e);
   }
